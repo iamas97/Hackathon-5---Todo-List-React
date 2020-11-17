@@ -24,7 +24,7 @@ export default class ToDoItems extends Component {
         <InputTodo
           addCallBC={this.save}
           buttonText="Save"
-          inp={this.props.item.text}
+          inp=""
           inpClass={["editTask", "saveTask"]}
         />
       ),
