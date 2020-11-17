@@ -37,8 +37,8 @@ export default class ToDoItems extends Component {
       <div className="todo-div">
         {this.state.showTag}
         <div className="todo-button">
-          <button class="edit" onClick={this.edit}>Edit</button>
-          <button class="delete" onClick={this.delete}>Delete</button>
+          <button className="edit" onClick={this.edit}>Edit</button>
+          <button className="delete" onClick={this.delete}>Delete</button>
         </div>
       </div>
     );
