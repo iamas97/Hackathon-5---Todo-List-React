@@ -1,6 +1,7 @@
 import "./style.css";
 import React, { Component } from "react";
-import InputTodo from "../Add";
+import EditTodo from "../EditTodo";
+
 
 export default class ToDoItems extends Component {
   constructor(props) {
@@ -21,7 +22,7 @@ export default class ToDoItems extends Component {
   edit = () => {
     this.setState({
       showTag: (
-        <InputTodo
+        <EditTodo
           addCallBC={this.save}
           buttonText="Save"
           inp=""
@@ -51,3 +52,5 @@ export default class ToDoItems extends Component {
     );
   }
 }
+
+

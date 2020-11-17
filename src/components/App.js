@@ -42,8 +42,6 @@ function App() {
       <InputTodo
         addCallBC={addItem}
         buttonText="Add"
-        inp=""
-        inpId={["task", "btn"]}
       />
       <ListItems key={"listitems"} li={listItems} CallBackFn={callBackFn} />
     </div>

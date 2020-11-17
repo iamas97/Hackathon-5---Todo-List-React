@@ -1,7 +1,7 @@
 import "./style.css";
 import React, { Component } from "react";
 
-export default class InputTodo extends React.Component {
+export default class EditTodo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -23,14 +23,13 @@ export default class InputTodo extends React.Component {
     return (
       <div className="header">
         <input
-          id="task"
-          className="new-todo"
+          className="editTask new-todo"
           type="text"
           onChange={this.change}
           value={this.state.text}
         />
         <button
-          id="btn"
+          className="saveTask"
           onClick={this.add}
         >
           {this.props.buttonText}
