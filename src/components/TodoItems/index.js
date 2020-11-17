@@ -22,7 +22,7 @@ export default class ToDoItems extends Component {
   
   edit=()=>{
     this.setState({
-      showTag:<InputTodo addCallBC={this.save} buttonText="Save" inp={this.props.item.text} inpId={["editTask","saveTask"]}/>
+      showTag:<InputTodo addCallBC={this.save} buttonText="Save" inp={this.props.item.text} inpClass={["editTask","saveTask"]}/>
     })
 
   }
