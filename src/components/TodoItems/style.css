@@ -1,0 +1,18 @@
+.todo-div {
+    display: flex;
+    border:1px solid rgba(0,0,0,0.3);
+    padding:5px;
+    border-radius: 5px;
+    width:550px;
+
+}
+.todo-button {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30px;
+}
+
+.todo-text {
+    flex-basis:500px;
+    padding:5px;
+}
