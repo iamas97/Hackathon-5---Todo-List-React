@@ -24,8 +24,8 @@ export default class InputTodo extends React.Component {
     render(){
         return (
             <div id="header">
-                <input className="new-todo" type="text" onChange={this.change} value={this.state.text}/>
-                <button onClick={this.add}>{this.props.buttonText}</button>
+                <input id={this.props.inpId[0]} className="new-todo" type="text" onChange={this.change} value={this.state.text}/>
+                <button id={this.props.inpId[1]} onClick={this.add}>{this.props.buttonText}</button>
             </div>
         )
     }

@@ -40,7 +40,7 @@ function App() {
   const callBackFn = [deleteItem,editItem]
   return (
     <div id="main">
-      <InputTodo addCallBC={addItem} buttonText="Add" inp="" />
+      <InputTodo addCallBC={addItem} buttonText="Add" inp="" inpId={["task","btn"]} />
       <ListItems key={"listitems"} li={listItems}  CallBackFn={callBackFn}/>
     </div>
   );

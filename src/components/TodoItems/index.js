@@ -7,7 +7,7 @@ export default class ToDoItems extends Component {
     super(props);
     console.log("TODo  started",this.props.item.id);
     this.state = {
-      showTag:<p className="todo-text">{this.props.item.text}</p>
+      showTag:<p className="todo-text list">{this.props.item.text}</p>
     }
     
   }
@@ -15,14 +15,14 @@ export default class ToDoItems extends Component {
     console.log('saved',t);
     this.props.CallBackFn[1](t,this.props.item.id);
     this.setState({
-      showTag:<p className="todo-text">{this.props.item.text}</p>
+      showTag:<p className="todo-text list">{this.props.item.text}</p>
     })
     
   }
   
   edit=()=>{
     this.setState({
-      showTag:<InputTodo addCallBC={this.save} buttonText="Save" inp={this.props.item.text}/>
+      showTag:<InputTodo addCallBC={this.save} buttonText="Save" inp={this.props.item.text} inpId={["editTask","save"]}/>
     })
 
   }
@@ -37,8 +37,8 @@ export default class ToDoItems extends Component {
       <div className="todo-div">
         {this.state.showTag}
         <div className="todo-button">
-          <button onClick={this.edit}>Edit</button>
-          <button onClick={this.delete}>Delete</button>
+          <button class="edit" onClick={this.edit}>Edit</button>
+          <button class="delete" onClick={this.delete}>Delete</button>
         </div>
       </div>
     );
