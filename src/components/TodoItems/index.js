@@ -2,7 +2,6 @@ import "./style.css";
 import React, { Component } from "react";
 import EditTodo from "../EditTodo";
 
-
 export default class ToDoItems extends Component {
   constructor(props) {
     super(props);
@@ -52,5 +51,3 @@ export default class ToDoItems extends Component {
     );
   }
 }
-
-

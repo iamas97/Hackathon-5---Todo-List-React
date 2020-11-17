@@ -29,10 +29,7 @@ export default class InputTodo extends React.Component {
           onChange={this.change}
           value={this.state.text}
         />
-        <button
-          id="btn"
-          onClick={this.add}
-        >
+        <button id="btn" onClick={this.add}>
           {this.props.buttonText}
         </button>
       </div>

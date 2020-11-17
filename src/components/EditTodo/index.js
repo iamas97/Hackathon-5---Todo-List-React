@@ -28,10 +28,7 @@ export default class EditTodo extends React.Component {
           onChange={this.change}
           value={this.state.text}
         />
-        <button
-          className="saveTask"
-          onClick={this.add}
-        >
+        <button className="saveTask" onClick={this.add}>
           {this.props.buttonText}
         </button>
       </div>
