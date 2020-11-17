@@ -6,15 +6,22 @@ export default class ListItems extends Component {
   constructor(props) {
     super(props);
   }
-  
-  list = ()=>{
-    return <ul>{this.props.li.map((item,i)=>(
-      <ToDoItems key={item.id} item={item} CallBackFn = {this.props.CallBackFn} />
-    ))}</ul>
-  }
-  
+
+  list = () => {
+    return (
+      <ul>
+        {this.props.li.map((item, i) => (
+          <ToDoItems
+            key={item.id}
+            item={item}
+            CallBackFn={this.props.CallBackFn}
+          />
+        ))}
+      </ul>
+    );
+  };
+
   render() {
-    
     return (
       <div id="lists">
         <h3>Lists are:</h3>
